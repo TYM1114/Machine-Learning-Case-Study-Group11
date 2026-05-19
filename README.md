@@ -232,13 +232,9 @@ pip install pandas numpy scikit-learn lightgbm xgboost catboost
 - `python blend.py` -> `submission_blend.csv`
 - `python blend_v2.py` -> 多個 `submission_blend_v2_*.csv`
 - `python blend_v3.py` -> 多個 `submission_blend_v3_*.csv`
+<img width="955" height="65" alt="Screenshot 2026-05-19 200658" src="https://github.com/user-attachments/assets/9434931d-e425-43cd-8862-090cc8cff4fa" />
+<img width="960" height="101" alt="Screenshot 2026-05-19 200718" src="https://github.com/user-attachments/assets/2f2cffa3-1430-474a-8532-3796fecdf485" />
 
-## 硬體與執行注意事項
-
-- `XGBoost` 預設使用 GPU (`device="cuda"`)
-- `CatBoost` 預設使用 GPU (`task_type="GPU"`)
-- `LightGBM` 會優先嘗試 CUDA；若安裝版本不支援 GPU，腳本會 fallback 到 CPU
-- 全量資料與多表聚合特徵吃記憶體，建議在 RAM 較充足的環境執行
 
 ## 參考文件
 
